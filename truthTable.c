@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "operator_stack.c"
 
 /*functionalities
 1. Build truth tables 
@@ -27,8 +28,16 @@ typedef struct elem_ elem;
 struct truth_table{
 	int numVars;
 	int numRows;
-	int numCols
+	int numCols;
 	elem **input_list;
 };
 
-struct truth_table* build_Truth_Table(struct )
+struct truth_table* build_Truth_Table(){
+	return NULL;
+}
+
+int main(int argc, char **argv) {
+	oper_stack *oper_list = OSCreate();
+	push(oper_list);
+	pop(oper_list);
+}
